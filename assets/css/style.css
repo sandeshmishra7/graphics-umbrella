@@ -203,6 +203,11 @@ li {
   margin: 0 auto;
 }
 
+.heading {
+  font-size: 22px;
+  color: #f2ffda;
+}
+
 /*=================================
   Header styling starts here
 =================================*/
@@ -250,7 +255,59 @@ nav {
 
 /* banner start */
 
+.banner {
+  background: #a0c63f;
+}
 
+.banner {
+  position: relative;
+}
+
+.banner-slider .active-slide {
+  padding: 27px 0 42px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-slider li {
+  display: none;
+}
+
+.banner-description {
+  flex-basis: 39%;
+}
+
+.banner-slider .heading {
+  padding-top: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 35px;
+  letter-spacing: 1px;
+}
+
+.arrows {
+  text-indent: -9999px;
+  display: flex;
+  align-items: center;
+}
+
+.prev::before, .next::before {
+  content: "\f137";
+  text-indent: 0;
+  font-family: "fontAwesome";
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transition: .3s all ease;
+}
+
+.next::before {
+  content: "\f138";
+  left: unset;
+  right: 5%;
+}
 
 /* banner end */
 
