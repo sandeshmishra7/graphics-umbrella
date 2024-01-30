@@ -233,7 +233,8 @@ h1 img {
 }
 
 nav {
-  padding-left: 100px;
+  width: 51%;
+  white-space: nowrap;
 }
 
 .nav-list a {
@@ -242,6 +243,11 @@ nav {
   font-size: 11px;
   color: #333333;
   text-transform: uppercase;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+  padding-right: 0;
 }
 
 /*=================================
@@ -291,7 +297,8 @@ nav {
   align-items: center;
 }
 
-.prev::before, .next::before {
+.prev::before,
+.next::before {
   content: "\f137";
   text-indent: 0;
   font-family: "fontAwesome";
@@ -311,11 +318,111 @@ nav {
 
 /* banner end */
 
+/* elegant start */
+
+.elegant {
+  padding-top: 30px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.elegant .heading {
+  padding-bottom: 30px;
+  margin-bottom: 38px;
+  border-bottom: 3px dashed #e8e8e8;
+  color: #202020;
+  text-transform: uppercase;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.green-text {
+  color: #97ae6a;
+}
+
+.business-features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.upper-text {
+  font-size: 28px;
+}
+
+.upper-text,
+.lower-text {
+  color: #1d1d1d;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.lower-text {
+  text-transform: capitalize;
+}
+
+.business-features {
+  margin-bottom: 38px;
+}
+
+.business-features li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 21%;
+}
+
+.business-features li a {
+  width: 105px;
+  height: 105px;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #a0c63f;
+  border: 20px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -99999px;
+}
+
+.business-features li a::before {
+  padding: 0 8px;
+  float: right;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "fontAwesome";
+  text-indent: 0;
+  color: #fff;
+  font-size: 66px;
+  transform: translate(-50%, -50%);
+  transition: .3s all ease;
+}
+
+.amazing-item a:before {
+  content: "\f1b8";
+}
+
+.hour-item a:before {
+  content: "\f095";
+}
+
+.web-item a:before {
+  content: "\f013";
+}
+
+.mobile-item a:before {
+  content: "\f3ce";
+}
+
+.business-features li a {
+  margin-bottom: 11px;
+}
+
+.upper-text {
+  margin-bottom: 8px;
+}
 
 
-
-
-
+/* elegant end*/
 
 /*=================================
   main styling ends here
